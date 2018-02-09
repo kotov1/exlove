@@ -1,8 +1,4 @@
 @import "vars"
-
-/*==========  Desktop First  ==========*/
-
-
 @media only screen and (max-width : 1200px)
 
 	.block-2
@@ -32,9 +28,7 @@
 
 	/**/
 
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 991px)
 
 	.top-menu
 		flex-direction: column
@@ -62,7 +56,7 @@
 		border-radius: 15px
 		background-color: $accent-color
 		position: fixed
-		right: 15vw
+		right: 10vw
 		top: 40px
 		&:before 
 			transition: all .25s
@@ -146,6 +140,8 @@
 		margin-bottom: 30px
 	
 	.block-5
+		.section-heading
+			margin-bottom: 0
 		.section__img-wrap
 			height: 100%
 		.section__img	
@@ -155,7 +151,6 @@
 	/**/
 
 
-/* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 
 	.page-content
@@ -197,53 +192,67 @@
 			transform: none
 
 	.section-text-wrap
-		padding: 25px 10px
+		padding: 25px 15px
 	.block-5 .block-text
-		padding: 25px 10px
+		padding: 25px 15px
 
 	/**/
 
-@media only screen and (max-width : 576px)
+@media only screen and (max-width : 575px)
 	footer
 		padding-bottom: 10px
+
+	.block-1
+		min-height: 580px
+		background-position: 55% 50%	
+
+	.page-heading-title
+			padding-right: 90px
 	/**/
 
 
 @media only screen and (max-width : 480px)
 
 	.block-1
-		background-position: 61% 50%	
-		min-height: 540px
-		padding: 20px 0
+		background-position: 50% 50%	
+		min-height: auto
+		padding: 44px 0
+		.page-heading-wrap
+			padding: 0
+		.page-heading-title
+			padding-right: 90px
+		.btn-wrap
+			margin-top: 40px
 	/**/
+@media only screen and (max-width : 400px)
+	.block-1
+		background-position: 62% 50%	
+		.page-heading-wrap
+			padding: 45px 0
+		.page-heading-title
+			padding-right: 61px
+@media only screen and (max-width : 380px)
+	.block-1
+		background-position: 62% 50%	
+		.page-heading-wrap
+			padding: 45px 0
+		.page-heading-title
+			padding-right: 50px
+@media only screen and (max-width : 360px)
+	.block-1
+		background-position: 62% 50%	
+		.page-heading-wrap
+			padding: 45px 0
+		.page-heading-title
+			padding-right: 30px
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
+@media only screen and (max-width : 340px)
+	.block-1
+		background-position: 62% 50%	
+		.page-heading-wrap
+			padding: 45px 0
+		.page-heading-title
+			padding-right: 1px
 
 @media only screen and (min-width : 1200px)
 	.container

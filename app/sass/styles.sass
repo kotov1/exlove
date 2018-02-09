@@ -70,6 +70,10 @@ ul, ol
 
 header
 	background-color: #242424
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 1000
 
 .logo
 	&-wrap
@@ -114,6 +118,7 @@ header
 
 .block-1
 	min-height: 770px
+	margin-top: 80px
 	padding-top: 100px
 	background: #000 url('../img/block-1-bg.jpg') no-repeat
 	background-size: cover
@@ -142,7 +147,9 @@ header
 	&-descr
 		font-size: 1.125em
 .btn-wrap
-	margin-top: 37px		
+	margin-top: 37px
+	a
+		cursor: pointer
 .btn
 	display: inline-block
 	padding: 5px 15px
@@ -153,6 +160,7 @@ header
 	transition: all .3s
 	outline: none
 	&:hover
+		background-color: $accent-color
 		border-color: transparent
 		color: inherit
 		text-decoration: none
@@ -270,22 +278,22 @@ header
 .block-3-text:hover
 	.block-3-text-outer:before 
 		width: 100%
-		transition: 100ms width ease 0ms
+		transition: 200ms width ease 0ms
 
 .block-3-text:hover
 	.block-3-text-outer:after 
 		height: 100%
-		transition: 100ms height ease 100ms
+		transition: 200ms height ease 200ms
 
 .block-3-text:hover 
 	.block-3-text-inner:after 
 		width: 100%
-		transition: 100ms width ease 200ms
+		transition: 200ms width ease 400ms
 
 .block-3-text:hover 
 	.block-3-text-inner:before 
 		height: 100%
-		transition: 100ms height ease 300ms
+		transition: 200ms height ease 600ms
 
 
 
@@ -376,6 +384,48 @@ footer
 		width: 35px
 	.logo-text
 		font-size: 1.6875em
+		padding-left: 0
+
+
+
+.page-thanks
+	min-height: 100vh
+	height: 100vh
+	background: #000 url('../img/background.jpg') no-repeat
+	background-size: cover
+	background-position: center
+	color: #fff
+	display: flex
+	flex-direction: column
+
+	.wrapper
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		margin-top: auto
+		margin-bottom: auto
+		padding: 0 15px
+
+	.thanks
+		text-transform: uppercase
+		font-size: 50px
+
+	.checked
+		margin: 10px 0 20px
+		width: 90px
+		height: 90px
+		background: url('../img/checked.png') no-repeat
+
+	.thanks-text
+		margin-bottom: 25px
+		font-size: 18px
+		text-align: center
+	.btn-wrap
+		margin-top: 0
+
+	footer
+		background-color: transparent
 
 @import "media" // Всегда в конце
 
